@@ -1,0 +1,5 @@
+body {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/46/Blockbuster_logo.svg'); /* Ruta de la imagen */
+    background-size: cover; /* Ajustar la imagen al tamaño de la ventana */
+    background-repeat: repeat; /* Evitar que la imagen se repita */
+  }

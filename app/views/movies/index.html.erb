@@ -1,0 +1,29 @@
+<p style="color: green"><%= notice %></p>
+
+<h1 class="text-center">Peliculas de Nuestra Base de Datos</h1>
+
+<%= link_to "Agregar nueva película", new_movie_path, class: "btn btn-success float-right mb-3" %>
+
+
+
+
+
+
+
+<div class="d-flex justify-content-center">
+  <div class="row justify-content-center align-items-center no-gutters">
+    <% @movies.each do |movie| %>
+      <div class="col-lg-2 px-">
+        <div class="card" style="width: 90%;">
+          <img src="<%=  movie.image %>" class="card-img-top" alt="Pelicula">
+          <div class="card-body">
+            <h6 class="card-title">Pelicula: <%=  movie.name %></h6>
+            
+            </p>
+            <a href="<%= edit_movie_path(movie) %>" class="btn btn-primary btn-sm">Editar</a>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

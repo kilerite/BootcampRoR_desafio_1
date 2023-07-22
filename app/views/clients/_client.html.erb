@@ -1,0 +1,21 @@
+<div class="d-flex justify-content-center align-items-center" style="height: 20vh;">
+  <div class="container">
+  
+    <div id="<%= dom_id(client) %>">
+      <p class="text-center">
+        <strong>Avatar:</strong>
+        <img src="<%= client.avatar %>" alt="Avatar" style="width: 50px;">
+      </p>
+
+      <p class="text-center">
+        <strong>Name:</strong>
+        <%= client.name %>
+      </p>
+
+      <p class="text-center">
+        <strong>Email:</strong>
+        <%= client.email %>
+      </p>
+    </div>
+  </div>
+</div>
